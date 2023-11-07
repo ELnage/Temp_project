@@ -3,6 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="images/logo.png">
    <link rel="stylesheet" href="CSS/all.min.css">
    <link rel="stylesheet" href="CSS/style.css">
    <title>ElMotatora</title>
@@ -11,16 +12,16 @@
    <div class="social">
       <ul>
          <li>
-            <a href="https://www.facebook.com/motatawera.Haram.officialpage">
+            <a target="_blank" href="https://www.facebook.com/motatawera.Haram.officialpage">
             <i class="fa-brands fa-facebook"></i>
             </a>
          </li>
          <li>
-            <a href="#"><i class="fa-brands fa-youtube"></i>
+            <a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i>
             </a>
          </li>
          <li>
-            <a href="tel:02 33844030">
+            <a target="_blank" href="tel:02 33844030">
                <i class="fa-solid fa-phone"></i>
             </a>
          </li>
@@ -44,28 +45,80 @@
    <div class="news">
       <div class="container">
          <p>اخبار المعهد : </p>
-         <div class="new"></div>
+         <marquee behavior="" direction="right">تتقدم إدارة المعهد بخالص التهنئة للطلاب الاوائل وتتمنى التوفيق والنجاح لجميع الطلاب
+للعام الجامعى 2022-2023
+</marquee>
       </div>
    </div>
    <div id="home" class="home">
-      <div class="text">
+      <div class="slide pic1 ">
+         <div class="text">
          <h2>خبرة اكثر من 28 عام في مجال التدريس</h2>
          <p>نوفر لك تخصصات متنوعة تناسب مستقبلك التعليمي الذي تحلم به</p>
-         <i class="fa-solid fa-chevron-right right"></i>
-         <i class="fa-solid fa-chevron-left left"></i>
-         <ul class="bullets">
-            <li></li>
-            <li class="active"></li>
-            <li></li>
-         </ul>
       </div>
+      </div>
+      <div class="slide pic2 ">
+         <div class="text">
+         <h2>اتعلم - اتطور - بكفائة</h2>
+         <p>التجارة – نظم المعلومات</p>
+      </div>
+      </div>
+      <div class="slide pic3">
+         <div class="text">
+         <h2>سجل موادك الدراسية حسب تخصصك بسهولة </h2>
+         <a href="#">تسجيل المواد</a>
+      </div>
+      </div>
+         <i class="fa-solid fa-chevron-right right" id="right"></i>
+         <i class="fa-solid fa-chevron-left left" id="left"></i>
+         <ul class="bullets">
+            <li data-index = "1"></li>
+            <li data-index = "2"></li>
+            <li data-index = "3"></li>
+         </ul>
    </div>
    <div id="info" class="info">
-      <h2>جودة التعليم و تعدد التخصصات</h2>
-      <p>نوفر لك تخصصات متنوعة تناسب مستقبلك التعليمي الذي تحلم به ( تجارة – نظم معلومات ) و نهتم بالجانب العملي الذي يؤهلك لسوق العمل فور تخرجك ، شعارنا دائما اتعلم و اتطور بكفائه .</p>
-      <div class="box">
-         نظم المعلومات الادارية
+      <div class="container">
+         <h2>جودة التعليم و تعدد التخصصات</h2>
+         <p>نوفر لك تخصصات متنوعة تناسب مستقبلك التعليمي الذي تحلم به ( تجارة – نظم معلومات ) و نهتم بالجانب العملي الذي يؤهلك لسوق العمل فور تخرجك ، شعارنا دائما اتعلم و اتطور بكفائه .</p>
+         <div class="specialties">
+            <div class="box">
+            <i class="fa-solid fa-desktop"></i>
+            <h3>نظم معلومات الاعمال</h3>
+            <p>نؤهلك لتكون محترفا في انظمة المعلومات وقواعد البيانات و انشائها و ادارتها</p>
+         </div>
+         <div class="box">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h3>التجارة و المحاسبة</h3>
+            <p>نؤهلك لتكون محاسبا او مسوقا او متخصص في البورصة او مديرا محترفا</p>
+         </div>
+         </div>
       </div>
    </div>
+       <!-- Start Section3 -->
+    <div class="section3">
+      <div class="box-one">
+        <video
+          controls
+          poster="images/pic2.png"
+          src="videos/y2mate.com - المعهد العالى للدراسات المتطورة_360p.mp4"
+          muted
+        ></video>
+      </div>
+      <div class="box-two">
+        <h3>عن المعهد العالى للدرسات المتطورة</h3>
+        <p>
+          يسعى المتطورة العالى ان يضيف للمجتمع المصري اضافات ايجابية متميزة
+          وملموسة في مجالات و تجارة ونظم المعلومات وادارة الاعمال بمختلف
+          تخصصاتها وذلك عن طريق تنمية وتثقيف شباب متعلم متطور لديه مهارات عقلية
+          وابداعية متميزة ويتمتع بفهم وتعاطف مع الاخرين وقبول لهم .
+        </p>
+        <div class="link">
+          <a href="#">المزيد</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Section3 -->
+   <script src="JS/main.js"></script>
 </body>
 </html>

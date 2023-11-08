@@ -60,8 +60,18 @@ cheker();
 
 let links = document.getElementById("links");
 let icon = document.getElementById("icon");
-window.onload = () => {
-  icon.addEventListener("click", () => {
-    links.style.cssText = "display: block; left: 0;";
-  });
-};
+let register = document.querySelector("header nav .register");
+
+icon.addEventListener("click", () => {
+  if (links.classList.contains("active")) {
+    links.classList.remove("active");
+    icon.classList.remove("exit");
+    register.classList.remove("active");
+    links.classList.add("close");
+  } else {
+    links.classList.remove("close");
+    links.classList.add("active");
+    icon.classList.add("exit");
+    register.classList.add("active");
+  }
+});

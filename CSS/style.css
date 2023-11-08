@@ -89,7 +89,8 @@ header .logo img {
 header .links {
   display: flex;
   gap: 10px;
-  margin-right: 120px;
+  margin-right: 60px;
+  transition: var(--main-transition);
 }
 header .links li {
   display: flex;
@@ -122,6 +123,45 @@ header .links li:hover a {
   color: #333;
 }
 /*Start nav par */
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav .register {
+  display: flex;
+  margin-right: 30px;
+  gap: 10px;
+  position: relative;
+  align-items: center;
+  background-color: var(--main-color);
+  border-radius: 6px;
+  padding: 10px 15px;
+}
+header nav .register::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 3px;
+  background-color: white;
+  transform: translate(calc(50% + 3px), -50%);
+  inset: 50% 50%;
+  border-radius: 6px;
+}
+header nav .register li:last-child a {
+  color: black;
+}
+header nav .register li a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+header nav .register li a:hover {
+  color: black;
+}
+header nav .register li:last-child a:hover {
+  color: white;
+}
 header nav .icon {
   width: 30px;
   display: flex;
@@ -137,9 +177,11 @@ header nav .icon span {
 }
 header nav .icon span:first-child {
   width: 100%;
+  transition: var(--main-transition);
 }
 header nav .icon span:last-child {
   width: 100%;
+  transition: var(--main-transition);
 }
 header nav .icon span:nth-child(2) {
   width: 75%;
@@ -155,43 +197,57 @@ header nav:hover .icon span:nth-child(2) {
 @media (max-width: 767px) {
   header {
     justify-content: space-between;
-    overflow: hidden;
   }
   header nav .icon {
     display: flex;
-    transition: 0.7s;
     cursor: pointer;
+    position: relative;
+    z-index: 11;
   }
   header .links {
-    transition: 0.7s;
     position: absolute;
-    left: -100%;
-    display: flex;
-    flex-direction: column;
+    transition: 0.7s;
+    left: 0%;
     top: 0%;
-    width: 100%;
+    width: 0%;
     height: 100vh;
     background-color: #e1e1e1;
     z-index: 10;
+    display: none;
+  }
+  header nav .register {
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: none;
   }
 }
-header nav .icon::before,
-nav .icon::after {
-  content: "";
-  position: absolute;
-  left: 18px;
-  top: 17px;
-  width: 3px;
-  height: 25px;
-  background-color: black;
-  z-index: 12;
-  border-radius: 6px;
-}
-header nav .icon::before {
-  transform: rotate(45deg);
-}
-header nav .icon::after {
-  transform: rotate(-45deg);
+@media (max-width: 767px) {
+  header nav .icon.exit {
+    transform: translate(-33px, -33px);
+  }
+  header nav .icon.exit span:first-child {
+    transform: rotate(45deg);
+  }
+  header nav .icon.exit span:nth-child(2) {
+    display: none;
+  }
+  header nav .icon.exit span:last-child {
+    transform: rotate(-45deg) translate(6px, -5px);
+  }
+  header nav .links.active {
+    width: 100%;
+    display: block;
+  }
+  header nav .links.close {
+    width: 0;
+    display: none;
+  }
+  header nav .register.active {
+    display: flex;
+  }
 }
 
 /*End nav par */

@@ -218,7 +218,7 @@ header nav:hover .icon span:nth-child(2) {
   header nav .register {
     position: absolute;
     left: 50%;
-    top: 300px;
+    top: 500px;
     transform: translate(-50%, -50%);
     z-index: 10;
     display: none;

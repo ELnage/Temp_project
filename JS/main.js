@@ -75,3 +75,10 @@ icon.addEventListener("click", () => {
     register.classList.add("active");
   }
 });
+// login cheked
+// let loginbtn = document.getElementById("login");
+// let chk = document.getElementById("chk");
+// loginbtn.onclick = function () {
+//   chk.setAttributeNS("checked");
+//   console.log("test");
+// };

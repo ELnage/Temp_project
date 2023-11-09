@@ -229,8 +229,6 @@ header nav:hover .icon span:nth-child(2) {
     top: 500px;
     transform: translate(-50%, -50%);
     z-index: 10;
-    /* display: none; */
-    left: -100%;
     white-space: nowrap;
   }
 }

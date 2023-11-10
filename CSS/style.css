@@ -118,11 +118,13 @@ header .links li a {
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
 }
-header .links li.active , header .links li:not(:last-child):hover {
+header .links li.active,
+header .links li:not(:last-child):hover {
   background-color: var(--main-color);
   color: white;
 }
-header .links li.active a , header .links li:not(:last-child):hover a {
+header .links li.active a,
+header .links li:not(:last-child):hover a {
   color: white;
 }
 /*Start nav par */
@@ -542,6 +544,7 @@ header nav:hover .icon span:nth-child(2) {
 }
 .section3 .box-one video {
   width: 100%;
+  height: 100%;
 }
 .section3 .box-two {
   background-color: var(--main-color);

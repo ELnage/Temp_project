@@ -1,28 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CodePen - Sign up / Login Form</title>
-    <link rel="stylesheet" href="CSS/loginStyle.css" />
-  </head>
-  <body>
-    <!-- partial:index.partial.html -->
+
     <!DOCTYPE html>
     <html>
       <head>
         <title>Slide Navbar</title>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="slide navbar ./css/style.css"
-        />
+        
         <link
           href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
           rel="stylesheet"
         />
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/loginStyle.css">
       </head>
       <body>
-        <div class="main">
+            <div class="social">
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/motatawera.Haram.officialpage"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.youtube.com/"
+            ><i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="tel:02 33844030">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" />
+      </div>
+      <nav>
+        <span class="icon" id="icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <ul class="links" id="links">
+          <li class="active">
+            <a href="#"><i class="fa-solid fa-house"></i> الرئيسية</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-earth-americas"></i> عن المتطورة</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-graduation-cap"></i> التخصصات</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-book"></i> تسجيل المواد</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-phone"></i> تواصل معنا</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-users"></i> الموظفين</a>
+          </li>
+          <li>
+            <ul class="register">
+              <li><a href="login.html" id="login">LogIN</a></li>
+              <li><a href="login.html">SignUp</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="continer">
+              <div class="main">
           <input type="checkbox" id="chk" aria-hidden="true" />
 
           <div class="signup">
@@ -69,9 +123,6 @@
             </form>
           </div>
         </div>
-        <!-- <script src="JS/test.js"></script> -->
-      </body>
-    </html>
-    <!-- partial -->
+    </div>
   </body>
 </html>

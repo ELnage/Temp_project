@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
   display: flex;
@@ -7,6 +7,11 @@ body {
   min-height: 100vh;
   font-family: "Jost", sans-serif;
   background: url(../images/main.png) no-repeat center/ cover;
+} */
+.continer {
+  padding-top: 40px;
+  background: url(../images/main.png) no-repeat center/ cover;
+  min-height: calc(100vh - 124px - 30px);
 }
 .main {
   width: 350px;
@@ -16,6 +21,7 @@ body {
   background: linear-gradient(to bottom, #0f0c29, #da4247, #24243e);
   border-radius: 10px;
   box-shadow: 5px 20px 50px #000;
+  margin: auto;
 }
 #chk {
   display: none;
